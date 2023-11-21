@@ -447,7 +447,7 @@ const Login = (props) => {
           <>
             <Grid item style={{ width: "100%" }}>
               <TextField
-                label="Bio (upto 250 words)"
+                label="About the Company (upto 250 words)"
                 multiline
                 rows={8}
                 style={{ width: "100%" }}
@@ -494,3 +494,4 @@ const Login = (props) => {
 };
 
 export default Login;
+
