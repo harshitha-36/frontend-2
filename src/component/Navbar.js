@@ -20,7 +20,6 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
 }));
-
 const Navbar = (props) => {
   const classes = useStyles();
   let history = useHistory();
@@ -31,10 +30,10 @@ const Navbar = (props) => {
   };
 
   return (
-    <AppBar position="fixed">
+    <AppBar position="fixed" style={{ backgroundColor: '#9002ec' }}>
       <Toolbar>
-        <Typography variant="h6" className={classes.title}>
-          Job Portal
+        <Typography variant="h6" className={classes.title} style={{ fontFamily: '', fontStyle: 'sans-serif', fontWeight: 'bold', color: 'white' }}>
+          JOB BOARD
         </Typography>
         {isAuth() ? (
           userType() === "recruiter" ? (
@@ -83,7 +82,7 @@ const Navbar = (props) => {
               Login
             </Button>
             <Button color="inherit" onClick={() => handleClick("/signup")}>
-              Signup
+              SIGNUP
             </Button>
           </>
         )}
