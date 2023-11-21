@@ -354,7 +354,7 @@ const ApplicationTile = (props) => {
     shortlisted: "#DC851F",
     accepted: "#09BC8A",
     rejected: "#D1345B",
-    deleted: "#B49A67",
+    deleted: "#FF0000",
     cancelled: "#FF8484",
     finished: "#4EA5D9",
   };
